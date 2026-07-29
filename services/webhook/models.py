@@ -9,7 +9,7 @@ from pydantic_settings import BaseSettings
 Base = declarative_base()
 
 
-class PullRequest(Base):
+class PullRequest(Base): # the alembic autogenerate is not used
     __tablename__ = "pull_requests"
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
