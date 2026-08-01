@@ -40,6 +40,7 @@ async def analyze(request: AnalyzeRequest):
 
     state = build_graph().invoke({"diff": diff, "patterns": patterns, "findings": []})
     findings_data = state.get("findings", [])
+    
 
     async with AsyncSessionLocal() as session:
         for f in findings_data:
