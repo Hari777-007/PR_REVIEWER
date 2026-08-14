@@ -91,7 +91,7 @@ module "eks" {
 
   eks_managed_node_groups = { #this automaticallyy attaches the ec2's default role and policies to access ECR for images
     default = {
-      instance_types = ["t3.medium"]
+      instance_types = ["t3.small"]
 
       min_size     = 1
       max_size     = 3
@@ -252,7 +252,7 @@ resource "aws_iam_role_policy_attachment" "lbc" {
 }
 
 resource "aws_s3_bucket" "reports" {
-  bucket = "ai-code-reviewer-reports"
+  bucket = "ai-code-reviewer-reports-813667758307"
 
   tags = {
     Environment = var.environment
