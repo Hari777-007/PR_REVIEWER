@@ -16,5 +16,5 @@ jobs:
   ci:
     uses: ./.github/workflows/service-ci.yml
     with:
-      service: gateway
-    secrets: inherit
+      service: gateway #act as input to the service-ci.yml workflow
+    secrets: inherit #gives the secerts to the called workflow
