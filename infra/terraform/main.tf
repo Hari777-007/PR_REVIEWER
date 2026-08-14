@@ -58,7 +58,7 @@ module "eks" {
 
   access_entries = {
     github-actions = {
-      principal_arn = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/github-actions-ai-reviewer"
+      principal_arn = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/github-actions-ai-reviewer77"
       policy_associations = {
         admin = {
           policy_arn   = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
