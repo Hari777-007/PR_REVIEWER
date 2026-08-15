@@ -91,7 +91,7 @@ module "eks" {
 
   eks_managed_node_groups = { #this automaticallyy attaches the ec2's default role and policies to access ECR for images
     default = {
-      instance_types = ["t3.small"]
+      instance_types = ["c7i-flex.large"]
 
       min_size     = 1
       max_size     = 3
