@@ -1126,7 +1126,7 @@ All pods should show `Running`. It may take a few minutes.
 Your project already has a config file that tells Prometheus where to find all 5 services. Apply it:
 
 ```
-kubectl create configmap prometheus-config --from-file=prometheus.yml="D:\MAJOR PROJECT KRISH SIR\ai-code-reviewer\monitoring\prometheus.yml" -n monitoring --dry-run=client -o yaml | kubectl apply -f -
+kubectl create configmap prometheus-config --from-file=prometheus.yml="E:\PR REVIEWER\monitoring\prometheus.yml" -n monitoring --dry-run=client -o yaml | kubectl apply -f -
 ```
 
 ### 16.5 Install Grafana
